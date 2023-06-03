@@ -6,6 +6,8 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
+import java.sql.Date;
+import java.sql.Time;
 import java.util.List;
 
 @Repository
@@ -15,5 +17,7 @@ public interface ScheduleRepository extends PagingAndSortingRepository<Schedule,
 
     @Query(value = "SELECT s FROM Schedule s WHERE filmId = :filmId")
     List<Schedule> getByFilm(@Param("filmId") String filmId);
+
+    List<Schedule> getSchedule(Date tglTayang, Time jamMulai, String isactive);
 
 }

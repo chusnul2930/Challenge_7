@@ -8,6 +8,7 @@ binarbej\challenge\chapter7\model\Seat.class
 binarbej\challenge\chapter7\repository\SeatRepository.class
 binarbej\challenge\chapter7\repository\UsersRepository.class
 binarbej\challenge\chapter7\controller\PaymentController.class
+binarbej\challenge\chapter7\controller\SchedulerFilm.class
 binarbej\challenge\chapter7\model\Schedule.class
 binarbej\challenge\chapter7\model\Booking.class
 binarbej\challenge\chapter7\controller\BookingController.class
